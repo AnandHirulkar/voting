@@ -17,12 +17,14 @@ public class Activity2 extends AppCompatActivity {
         TextView textView = findViewById(R.id.candi);
 
         Intent intent = getIntent();
-        String name = intent.getExtras().getString("name");
-        String id = intent.getExtras().getString("id");
-        String candidate = intent.getExtras().getString("candidate");
-        String vote = intent.getExtras().getString("vote");
+        String name = intent.getExtras().getString("user_name");
+        String id = intent.getExtras().getString("user_id");
+        String candidate = intent.getExtras().getString("candi_name");
+        String vote = intent.getExtras().getString("vote_cnt");
 
-        textView.setText(id);
+        String str = "ID: " + id + ", " + name + " voted for " + candidate + " with total vote " + vote;
+
+        textView.setText(str);
 
     }
 

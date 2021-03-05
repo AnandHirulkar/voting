@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner sp;
     TextView tv_name;
     TextView tv_id;
-    private int voteCount = 0;
+    private int voteCount = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
     public void vote_m(View view){
 
         Intent intent = new Intent(this,Activity2.class);
-        intent.putExtra("candidate", sp.getSelectedItem().toString());
-        intent.putExtra("name", tv_name.getText().toString());
-        intent.putExtra("id", tv_id.getText().toString());
-        intent.putExtra("vote", voteCount);
+        intent.putExtra("candi_name", sp.getSelectedItem().toString());
+        intent.putExtra("user_name", tv_name.getText().toString());
+        intent.putExtra("user_id", tv_id.getText().toString());
+        intent.putExtra("vote_cnt", voteCount);
         startActivity(intent);
     }
 
