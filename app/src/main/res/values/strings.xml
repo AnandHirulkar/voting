@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Voting</string>
+    <string-array name="candidate">
+        <item>Trudeau</item>
+        <item>Biden</item>
+        <item>Trump</item>
+        <item>Modi</item>
+        <item>Netanyahu</item>
+    </string-array>
+</resources>
