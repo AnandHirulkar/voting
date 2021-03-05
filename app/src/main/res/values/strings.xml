@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Voting</string>
+    <string name="name">Name:</string>
+    <string name="nametxt">Name</string>
+    <string name="id">ID:</string>
+    <string name="idtxt">Id</string>
+    <string name="votebtn">Vote</string>
+    <string name="acptbtn">Accept</string>
+    <string name="candidatetxt">Choose Candidate</string>
     <string-array name="candidate">
         <item>Trudeau</item>
         <item>Biden</item>

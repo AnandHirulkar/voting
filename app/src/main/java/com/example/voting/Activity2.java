@@ -22,7 +22,7 @@ public class Activity2 extends AppCompatActivity {
         String candidate = intent.getExtras().getString("candidate");
         String vote = intent.getExtras().getString("vote");
 
-        textView.setText(id + " " + name + " voted for " + candidate + " with total vote " + vote);
+        textView.setText(id);
 
     }
 
