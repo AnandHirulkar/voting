@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Spinner sp;
-    TextView tv;
     TextView tv_name;
     TextView tv_id;
     private int voteCount = 0;
@@ -22,21 +21,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         sp = findViewById(R.id.spinner2);
         tv_name = findViewById(R.id.name);
-        tv_id = findViewById(R.id.name);
+        tv_id = findViewById(R.id.id);
     }
 
     public void accept(View view){
         voteCount++;
     }
 
-    public void vote(View view){
+    public void vote_m(View view){
 
         Intent intent = new Intent(this,Activity2.class);
         intent.putExtra("candidate", sp.getSelectedItem().toString());
         intent.putExtra("name", tv_name.getText().toString());
         intent.putExtra("id", tv_id.getText().toString());
         intent.putExtra("vote", voteCount);
-
         startActivity(intent);
     }
 
