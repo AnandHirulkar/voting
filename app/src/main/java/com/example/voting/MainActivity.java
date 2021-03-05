@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner sp;
     TextView tv_name;
     TextView tv_id;
-    private int voteCount = 1;
+    private int voteCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("candi_name", sp.getSelectedItem().toString());
         intent.putExtra("user_name", tv_name.getText().toString());
         intent.putExtra("user_id", tv_id.getText().toString());
-        intent.putExtra("vote_cnt", voteCount);
+        intent.putExtra("vote_cnt", String.valueOf(voteCount));
         startActivity(intent);
     }
 
